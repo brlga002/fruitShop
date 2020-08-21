@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dash.dashboard');
 });
+
+Route::resource('clientes', 'Client\\ClientController')->names('client')->parameters(['clientes'=>'client']);
+Route::resource('frutas', 'Fruit\\FruitController')->names('fruit')->parameters(['frutas'=>'fruit']);
+Route::resource('vendas', 'Sale\\SaleController')->names('sale')->parameters(['vendas'=>'sale']);
+
+Route::get('/estoque', 'Fruit\\StockController@index')->name('stock.index');
+
