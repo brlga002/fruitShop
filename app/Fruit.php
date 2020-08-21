@@ -11,4 +11,11 @@ class Fruit extends Model
     protected $fillable = [
         'nome'      
     ];
+
+    public function salesContent()
+    {
+        return $this->hasOne(SalesContent::class,'fruits_id','id');
+    }
+
+    
 }
