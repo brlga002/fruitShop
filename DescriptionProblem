@@ -1,0 +1,35 @@
+Um cliente dono de uma frutaria, solicitou um sistema no qual ele possa 
+cadastrar as frutas em estoque, as vendas que foram feitas 
+e pra qual cliente foi vendido. 
+Em relação às frutas as informações necessárias são: nome, data de validade e quantidade. 
+Em relação à venda: data da venda, quantidade de fruta e valor da venda 
+e a do cliente: nome, cpf, valor gasto e data da compra.
+
+Sistema para frutaria:
+     - cadastrar as frutas em estoque, 
+     - As vendas que foram feitas e pra qual cliente foi vendido. 
+     - Em relação às frutas as informações necessárias são: 
+        - nome
+        - data de validade
+        - quantidade. 
+     - Em relação à venda: 
+        - data da venda
+        - quantidade de fruta 
+        - valor da venda 
+        - cliente: 
+            - nome
+            - cpf
+            - valor gasto 
+            - data da compra.
+
+Como um plus um dashboard com todas essas informações.
+
+frameworks desejáveis:
+    - laravel
+    - vuejs
+
+banco de dados:
+    - mysql
+
+ 
+Obs: o versionamento do código também será avaliado.
