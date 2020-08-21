@@ -23,9 +23,9 @@
 
 <body>
 
- @extends('dash.right')
+ @extends('dash._right')
 
- @extends('dash.left')            
+ @extends('dash._left')            
  
 <script src="{{  url(mix('dash/assets/js/script.js')) }}"></script>   
 
