@@ -37,6 +37,11 @@ Problema: Um cliente dono de uma frutaria, solicitou um sistema no qual ele poss
 
 ## Rodando o Aplicativo
 
+- Crie um banco de dados com o nome de fruitShop
+- faça uma copia do arquivo .env.example com o nome de .env
+
+No arquivo .env ficam as configurações de banco de dados: usuario, senha ect... 
+
 ```bash
 # Clone este repositório
 $ git clone https://github.com/brlga002/fruitShop.git
@@ -46,6 +51,9 @@ $ cd fruitShop
 
 # Instale as dependências
 $ composer install
+
+# Rode as migrations
+$ php artisan migrate:refresh
 
 # Execute a aplicação em modo de desenvolvimento
 $ php artisan serve
